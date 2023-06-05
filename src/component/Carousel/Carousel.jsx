@@ -27,6 +27,7 @@ const Carousel = () => {
   useEffect(() => {
     const timer = setInterval(goToNextSlide, 3000);
     return () => clearInterval(timer);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentIndex]);
 
   return (
